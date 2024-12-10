@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Du Ek Sam</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container" id="bike">
+    <nav>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 300 150" class="logo">
+            <!-- Outer Rounded Rectangle -->
+            <rect x="10" y="10" width="280" height="130" rx="20" fill="#D71920" />
+          
+            <!-- Inner Rectangle -->
+            <rect x="40" y="30" width="220" height="90" rx="10" fill="#FFFFFF" />
+          
+            <!-- "H" Shape -->
+            <rect x="100" y="40" width="20" height="70" fill="#D71920" />
+            <rect x="190" y="40" width="20" height="70" fill="#D71920" />
+            <rect x="110" y="65" width="80" height="20" fill="#D71920" />
+          
+          </svg>
+          
+
+        <a href="login/index.html" class="btn">Log In</a>
+    </nav>
+
+    <div class="content">
+        <h2>THE HONDA</h2>
+        <br />
+        <h1>WAVE 100</h1>
+        <p>
+            HONDA, driven by its philosophy "The Power of Dreams,"
+            has introduced a new tagline: "The Power of Dreams — <br>How We Move You." 
+            This new brand slogan reflects the company's continued mission to innovate 
+            and provide <br> people with the joy and freedom of mobility, from the <br> present into the future.
+        </p>
+        <h3>Choose your Color </h3>
+
+        <div class="colour-select">
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="black"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let redBtn = document.getElementById("red");
+    let blueBtn = document.getElementById("blue");
+    let blackBtn = document.getElementById("black");
+    let bike = document.getElementById("bike");
+
+    /* Function for the red button */ 
+    redBtn.onclick = function () {
+        bike.style.backgroundImage = "url(images/BMW1.png)";
+    };
+
+    /* Function for the blue button */
+    blueBtn.onclick = function () {
+        bike.style.backgroundImage = "url(images/BMW2.png)";
+    };
+
+    /* Function for the black button */
+    blackBtn.onclick = function () {
+        bike.style.backgroundImage = "url(images/BMW3.png)";
+    };
+</script>
+</body>
+</html>
